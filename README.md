@@ -137,16 +137,16 @@ principal인 $100은 risk-free rate에 따라 현재의 가치가 변하지만 c
 
 $\Delta$-hedged position을 구하기 위하여 아래의 연립방정식을 이용한다. V와 S모두 coupon에 대한 함수이다.
 
-- $V_1(H)=X_1(H)=e^{r\Delta t}(X_0-\Delta_0S_0)+\Delta_0S_1(H)$
-- $V_1(T)=X_1(T)=e^{r\Delta t}(X_0-\Delta_0S_0)+\Delta_0S_1(T)$
-- $S_1(H)=S_0\times u$
-- $S_1(T)=S_0\times d$
+- ![math](https://latex.codecogs.com/gif.latex?V_1%28H%29%3DX_1%28H%29%3De%5E%7Br%5CDelta%20t%7D%28X_0-%5CDelta_0S_0%29&plus;%5CDelta_0S_1%28H%29)
+- ![math](https://latex.codecogs.com/gif.latex?V_1%28T%29%3DX_1%28T%29%3De%5E%7Br%5CDelta%20t%7D%28X_0-%5CDelta_0S_0%29&plus;%5CDelta_0S_1%28T%29)
+- ![math](https://latex.codecogs.com/gif.latex?S_1%28H%29%3DS_0%5Ctimes%20u)
+- ![math](https://latex.codecogs.com/gif.latex?S_1%28T%29%3DS_0%5Ctimes%20d)
 
 2020년 11월 9일 기준으로 
 
-- $V_1(H)=16.3077767487$
-- $V_1(T)=15.8165822864$
+- ![math](https://latex.codecogs.com/gif.latex?V_1%28H%29%3D16.3077767487)
+- ![math](https://latex.codecogs.com/gif.latex?V_1%28T%29%3D15.8165822864)
 
-$S_0\Delta_0=\frac{V_1(H)-V_1(T)}{u-d}=\frac{16.3077767487-15.8165822864}{1.012094473-0.988050056}=20.4286285$
+![math](https://latex.codecogs.com/gif.latex?S_0%5CDelta_0%3D%5Cfrac%7BV_1%28H%29-V_1%28T%29%7D%7Bu-d%7D%3D%5Cfrac%7B16.3077767487-15.8165822864%7D%7B1.012094473-0.988050056%7D%3D20.4286285)
 
 따라서 increasing rate가 S&P500 index와 동일한 파생상품을 20.4286285만큼 구매하여 hedge를 할 수 있다.
