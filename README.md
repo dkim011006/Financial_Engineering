@@ -27,7 +27,7 @@ maturity = 2 year
 
 평균값을 이용하여 9, 15, 18, 21개월을 추정한다.
 
-# Calculate Volatility $\sigma$
+# Calculate Volatility ![math](https://latex.codecogs.com/gif.latex?%5Csigma)
 
 ```python
 import yfinance as yf
@@ -57,14 +57,14 @@ data.to_excel('history.xlsx')
 
 # Calculate ![math](https://latex.codecogs.com/gif.latex?u%2Cd%2Cp%2Cq)
 
-하루 단위로 기간을 자르면 $dt = 1/252=0.003968254$ 이다.
+하루 단위로 기간을 자르면 ![math](https://latex.codecogs.com/gif.latex?dt%20%3D%201/252%3D0.003968254) 이다.
 
 CRR method를 쓰면 
 
-- $u=e^{\sigma \sqrt{\Delta t}}=e^{0.190842048\times \sqrt{0.003968254}}=1.012094473$
-- $d=e^{-\sigma \sqrt{\Delta t}}=e^{-0.190842048\times \sqrt{0.003968254}}=0.988050056$
-- $p =1-q=\frac{e^{r\Delta t}-d}{u-d}=0.497192603$
-- $q=0.502807397$
+- ![math](https://latex.codecogs.com/gif.latex?u%3De%5E%7B%5Csigma%20%5Csqrt%7B%5CDelta%20t%7D%7D%3De%5E%7B0.190842048%5Ctimes%20%5Csqrt%7B0.003968254%7D%7D%3D1.012094473)
+- ![math](https://latex.codecogs.com/gif.latex?d%3De%5E%7B-%5Csigma%20%5Csqrt%7B%5CDelta%20t%7D%7D%3De%5E%7B-0.190842048%5Ctimes%20%5Csqrt%7B0.003968254%7D%7D%3D0.988050056)
+- ![math](https://latex.codecogs.com/gif.latex?p%20%3D1-q%3D%5Cfrac%7Be%5E%7Br%5CDelta%20t%7D-d%7D%7Bu-d%7D%3D0.497192603)
+- ![math](https://latex.codecogs.com/gif.latex?q%3D0.502807397)
 
 # Apply Binomial Model
 
@@ -129,7 +129,7 @@ couponRate라는 (n+1)X(n+1) 크기의 배열을 선언한다. increasingRate배
 
 Principal과 coupon의 현재가치를 모두 더하면 fair price가 된다. 
 
-$2.0099772243439+2.0099772243439 \times\frac{1}{e^{0.0011 \times 0.25}}+2.0099772243439 \times\frac{1}{e^{0.0011 \times 0.5}}+2.0099772243439 \times\frac{1}{e^{0.00115 \times 0.75}}+2.0099772243439 \times\frac{1}{e^{0.0012 \times 1}}+2.0099772243439 \times\frac{1}{e^{0.001325 \times 1.25}}+2.0099772243439 \times\frac{1}{e^{0.00145 \times 1.5}}+2.0099772243439 \times\frac{1}{e^{0.001575 \times 1.75}}+100 \times\frac{1}{e^{0.0017 \times 2}}=115.7213683$
+![math](https://latex.codecogs.com/gif.latex?2.0099772243439&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.0011%20%5Ctimes%200.25%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.0011%20%5Ctimes%200.5%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.00115%20%5Ctimes%200.75%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.0012%20%5Ctimes%201%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.001325%20%5Ctimes%201.25%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.00145%20%5Ctimes%201.5%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.001575%20%5Ctimes%201.75%7D%7D&plus;100%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.0017%20%5Ctimes%202%7D%7D%3D115.7213683)
 
 # $\Delta$-hedged position
 
