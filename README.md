@@ -55,7 +55,7 @@ data.to_excel('history.xlsx')
 
 - $\sigma_Y=\sigma_D\times\sqrt{252}=0.190842048$
 
-# Calculate $u,d,p,q$
+# Calculate \u,d,p,q
 
 하루 단위로 기간을 자르면 $dt = 1/252=0.003968254$ 이다.
 
