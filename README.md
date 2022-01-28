@@ -43,7 +43,7 @@ data.to_excel('history.xlsx')
 <img width="637" alt="스크린샷_2021-12-06_오후_8 55 28" src="https://user-images.githubusercontent.com/65712771/151545432-9108daff-4a49-4f04-8f4d-938dc8b9e369.png">
 위와 같이 1927년 12월 30일부터 2020년 11월 9일까지의 모든 자료를 가져온다.
 
-종가를 기준으로 $\ln (S_i/S_{i-1})$를 구하고 이것의 Variance를 구하면 
+종가를 기준으로 ![math](https://latex.codecogs.com/gif.latex?%5Cln%20%28S_i/S_%7Bi-1%7D%29)를 구하고 이것의 Variance를 구하면 
 
 - Variance = 0.000144527
 
