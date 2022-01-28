@@ -49,11 +49,11 @@ data.to_excel('history.xlsx')
 
 따라서 Volatility per day는
 
-- $\sigma_D = \sqrt{0.000144527}=0.012021919$
+- ![math](https://latex.codecogs.com/gif.latex?%5Csigma_D%20%3D%20%5Csqrt%7B0.000144527%7D%3D0.012021919)
 
 이것을 Volatility per annum으로 바꾸면 
 
-- $\sigma_Y=\sigma_D\times\sqrt{252}=0.190842048$
+- ![math](https://latex.codecogs.com/gif.latex?%5Csigma_Y%3D%5Csigma_D%5Ctimes%5Csqrt%7B252%7D%3D0.190842048)
 
 # Calculate ![math](https://latex.codecogs.com/gif.latex?u%2Cd%2Cp%2Cq)
 
@@ -131,11 +131,11 @@ Principal과 coupon의 현재가치를 모두 더하면 fair price가 된다.
 
 ![math](https://latex.codecogs.com/gif.latex?2.0099772243439&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.0011%20%5Ctimes%200.25%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.0011%20%5Ctimes%200.5%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.00115%20%5Ctimes%200.75%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.0012%20%5Ctimes%201%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.001325%20%5Ctimes%201.25%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.00145%20%5Ctimes%201.5%7D%7D&plus;2.0099772243439%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.001575%20%5Ctimes%201.75%7D%7D&plus;100%20%5Ctimes%5Cfrac%7B1%7D%7Be%5E%7B0.0017%20%5Ctimes%202%7D%7D%3D115.7213683)
 
-# $\Delta$-hedged position
+# ![math](https://latex.codecogs.com/gif.latex?%5CDelta)-hedged position
 
 principal인 $100은 risk-free rate에 따라 현재의 가치가 변하지만 coupon은 S&P index에 따라 값이 변한다. 따라서 coupon에 대한 hedge를 해야한다. S&P index 와 increasing rate가 같은 파생상품을 통하여 hedge를 할 수 있다.
 
-$\Delta$-hedged position을 구하기 위하여 아래의 연립방정식을 이용한다. V와 S모두 coupon에 대한 함수이다.
+![math](https://latex.codecogs.com/gif.latex?%5CDelta)-hedged position을 구하기 위하여 아래의 연립방정식을 이용한다. V와 S모두 coupon에 대한 함수이다.
 
 - ![math](https://latex.codecogs.com/gif.latex?V_1%28H%29%3DX_1%28H%29%3De%5E%7Br%5CDelta%20t%7D%28X_0-%5CDelta_0S_0%29&plus;%5CDelta_0S_1%28H%29)
 - ![math](https://latex.codecogs.com/gif.latex?V_1%28T%29%3DX_1%28T%29%3De%5E%7Br%5CDelta%20t%7D%28X_0-%5CDelta_0S_0%29&plus;%5CDelta_0S_1%28T%29)
