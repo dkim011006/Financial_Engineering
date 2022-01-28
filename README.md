@@ -1,13 +1,7 @@
-# Financial_Engineering
-2021_Introduction to Financial Engineering Term Project_Professor Jang Bong Gyu (장봉규)
+# 2021_Introduction to Financial Engineering Term Project
+Professor Jang Bong Gyu (장봉규)
 
-# 2021 IFE Term Project
-
-이름: 김대연
-
-학번: 20200217
-
-# 조건
+# Condition
 
 principal = $100
 
