@@ -40,8 +40,7 @@ data.to_excel('history.xlsx')
 
 위의 코드를 통하여 S&P 500 index의 자료를 history.xlsx파일로 가져온다.
 
-![스크린샷 2021-12-06 오후 8.55.28.png](2021%20IFE%20Term%20Project(100%E1%84%8C%E1%85%A5%E1%86%B7)%20bd6b7bd3a19f4920946b229cfd5b2ec0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2021-12-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.55.28.png)
-
+<img width="637" alt="스크린샷_2021-12-06_오후_8 55 28" src="https://user-images.githubusercontent.com/65712771/151545432-9108daff-4a49-4f04-8f4d-938dc8b9e369.png">
 위와 같이 1927년 12월 30일부터 2020년 11월 9일까지의 모든 자료를 가져온다.
 
 종가를 기준으로 $\ln (S_i/S_{i-1})$를 구하고 이것의 Variance를 구하면 
